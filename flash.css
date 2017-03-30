@@ -1,0 +1,85 @@
+.container {
+    
+}
+
+.container .banner {
+	width: 230px;
+	height: 260px;
+	margin: 5px;
+	overflow: hidden;
+	background-color: #DDDDDD;
+	position:relative;
+	border-radius:0px 15px 15px 0px;
+}
+
+.container .banner:hover {
+    background-color: #2d3538;
+}
+
+.container .kotak-1 {
+    position: absolute;
+    z-index: 1;
+}
+
+.container .kotak-1 {
+    background-color: rgba(45, 53, 0, 0.2);
+    width: 70%;
+    height: 180%;
+	text-align:center;
+    top: -10%;
+    left: 30%;
+    -webkit-animation: rotating 4s ease-out infinite;
+    -moz-animation: rotating 4s ease-out infinite;
+    -ms-animation: rotating 4s ease-out infinite;
+    animation: rotating 4s ease-out infinite;
+}
+
+.container .banner, .container .kotak-1 {
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    -ms-transition: all ease 1s;
+    transition: all ease 1s;
+}
+
+.container .banner:hover .kotak-1 {
+    height: 700px;
+    width: 700px;
+    top: -40%;
+    left: -5%;
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+		
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+		
+    }
+}
+@-moz-keyframes rotating {
+    from{
+        -moz-transform: rotate(0deg);
+    }
+    to{
+        -moz-transform: rotate(360deg);
+    }
+}
+@-ms-keyframes rotating {
+    from{
+        -ms-transform: rotate(0deg);
+    }
+    to{
+        -ms-transform: rotate(360deg);
+    }
+}
+@-keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}/* CSS Document */
